@@ -11,11 +11,11 @@ export const StyledIntroButton = styled.button`
     width: 343px;
     height: 86px;
     border-radius: 16px;
-    background: #f1f1f1;
+    background: #F1C21A;
     border: none;
-    margin-top 5px;
+    margin-top 16px;
 `
-export const StyledIntroButtonSelect = styled.button`
+export const StyledIntroBottomButton = styled.button`
     width: 343px;
     height: 54px;
     border-radius: 16px;
@@ -42,6 +42,7 @@ export const Area = styled.div`
     height: 812px;
     display: flex;
     flex-direction: column;
+    padding-top: 60px;
 `
 
 
@@ -53,15 +54,16 @@ export const SelectText = styled.text`
     line-height: 19px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-
     color: #EDAF10;
 `
+interface Props{
+    ClickeSate?: string;
+}
 
 
+const IntroButton: React.FC <Props>= ({ClickeSate}) => {
 
-const IntroButton: React.FC = () => {
 
-    // const logo = require("../icons/Accessible.svg") as string;
 
     return (
         <> 
@@ -73,7 +75,7 @@ const IntroButton: React.FC = () => {
                     <StyledIntroButton><img src={Pets}/></StyledIntroButton>    
                 </StyleBoxIntroButton>
                 <StyleBoxIntroButton>
-                    <StyledIntroButtonSelect><SelectText>선택하기</SelectText></StyledIntroButtonSelect> 
+                    <StyledIntroBottomButton><SelectText>선택하기</SelectText></StyledIntroBottomButton> 
                 </StyleBoxIntroButton>  
             </Area>
         </>
