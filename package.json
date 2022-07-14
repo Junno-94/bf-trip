@@ -46,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.2.1",
     "@types/styled-components": "^5.1.25",
     "file-loader": "^6.2.0"
   }
